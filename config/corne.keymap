@@ -66,104 +66,94 @@
     combos {
         compatible = "zmk,combos";
 
-        escape {
-            bindings = <&kp ESCAPE>;
-            key-positions = <13 29>;
-        };
-
         delete {
             bindings = <&kp DELETE>;
             key-positions = <15 21>;
         };
 
-        perc {
-            bindings = <&kp PERCENT>;
-            key-positions = <5 17>;
-            layers = <0>;
+        singleQuote {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <22 34>;
+        };
+
+        doubleQuotes {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <10 22>;
+        };
+
+        Minus {
+            bindings = <&kp MINUS>;
+            key-positions = <18 30>;
+        };
+
+        underscore {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <6 18>;
         };
 
         equal {
             bindings = <&kp EQUAL>;
-            key-positions = <28 16>;
-            layers = <0>;
-        };
-
-        dollar {
-            bindings = <&kp DOLLAR>;
-            key-positions = <4 16>;
-            layers = <0>;
-        };
-
-        pound {
-            bindings = <&kp POUND>;
-            key-positions = <3 15>;
-            layers = <0>;
-        };
-
-        at {
-            bindings = <&kp AT>;
-            key-positions = <2 14>;
-            layers = <0>;
-        };
-
-        backslash {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <26 14>;
-            layers = <0>;
-        };
-
-        star {
-            bindings = <&kp STAR>;
-            key-positions = <8 20>;
-            layers = <0>;
-        };
-
-        slash {
-            bindings = <&kp SLASH>;
-            key-positions = <32 20>;
-            layers = <0>;
+            key-positions = <19 31>;
         };
 
         plus {
             bindings = <&kp PLUS>;
             key-positions = <7 19>;
-            layers = <0>;
         };
 
-        minus {
-            bindings = <&kp KP_MINUS>;
-            key-positions = <31 19>;
-            layers = <0>;
+        pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <8 20>;
         };
 
-        underscore {
-            bindings = <&kp UNDER>;
-            key-positions = <30 18>;
-            layers = <0>;
+        backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <20 32>;
         };
 
-        leftbrack {
+        tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <9 21>;
+        };
+
+        grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <21 33>;
+        };
+
+        backSpace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <14 29>;
+        };
+
+        leftPara {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <15 3>;
+        };
+
+        rightPara {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <15 27>;
+        };
+
+        leftBrace {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <4 16>;
+        };
+
+        leftBracket {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <31 32>;
-            layers = <0>;
+            key-positions = <16 28>;
         };
 
-        rightbrack {
+        rightBrace {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <5 17>;
+        };
+
+        rightBracket {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <33 32>;
-            layers = <0>;
-        };
-
-        para-less {
-            bindings = <&paraless>;
-            key-positions = <20 19>;
-            layers = <0>;
-        };
-
-        para-great {
-            bindings = <&paragreat>;
-            key-positions = <20 21>;
-            layers = <0>;
+            key-positions = <29 17>;
         };
     };
 
@@ -185,7 +175,7 @@
 &trans  &kp Q             &kp W        &kp E           &kp R        &kp T      &kp Y      &kp U        &kp I                &kp O             &kp P                    &trans
 &trans  &kp A             &kp S        &kp D           &kp F        &kp G      &kp H      &kp J        &kp K                &kp L             &mt RIGHT_GUI SEMICOLON  &trans
 &trans  &hm LEFT_SHIFT Z  &hm LCTRL X  &hm LEFT_ALT C  &kp V        &kp B      &kp N      &kp M        &hm RIGHT_ALT COMMA  &hm RCTRL PERIOD  &hm RSHIFT SLASH         &trans
-                                       &kp ESC         &lt 2 TILDE  &kp TAB    &kp SPACE  &lt 1 MINUS  &mt RIGHT_GUI ENTER
+                                       &kp ESC         &lt 2 TILDE  &kp TAB    &kp SPACE  &lt 1 MINUS  &kp ENTER
             >;
         };
 
@@ -199,20 +189,20 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&trans  &trans     &kp N1  &kp N2  &kp N3  &kp GRAVE    &kp DELETE  &kp LC(NUMBER_0)  &kp LC(MINUS)  &kp LC(KP_PLUS)  &kp BACKSPACE  &trans
-&trans  &trans     &kp N4  &kp N5  &kp N6  &trans       &kp LEFT    &kp DOWN          &kp UP_ARROW   &kp RIGHT        &kp LC(R)      &trans
-&trans  &kp LSHFT  &kp N7  &kp N8  &kp N9  &trans       &kp LC(S)   &kp LC(X)         &kp LC(C)      &kp LC(V)        &kp RSHFT      &trans
-                           &kp N0  &trans  &trans       &trans      &trans            &trans
+&trans  &trans     &kp N1  &kp N2  &kp N3      &kp PLUS     &kp DELETE  &kp LC(NUMBER_0)  &kp LC(MINUS)  &kp LC(KP_PLUS)  &kp BACKSPACE  &trans
+&trans  &trans     &kp N4  &kp N5  &kp N6      &kp MINUS    &kp LEFT    &kp DOWN          &kp UP_ARROW   &kp RIGHT        &kp LC(R)      &trans
+&trans  &kp LSHFT  &kp N7  &kp N8  &kp N9      &kp EQUAL    &kp LC(S)   &kp LC(X)         &kp LC(C)      &kp LC(V)        &kp RSHFT      &trans
+                           &kp N0  &kp PERIOD  &trans       &trans      &trans            &trans
             >;
         };
 
         FUN {
             display-name = "NavFun";
             bindings = <
-&trans  &kp CAPS           &kp F1  &kp F2  &kp F3  &kp F10    &trans     &trans                &trans            &trans             &trans            &trans
-&trans  &kp DOUBLE_QUOTES  &kp F4  &kp F5  &kp F6  &kp F11    &kp MINUS  &kp EQUAL             &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SINGLE_QUOTE  &trans
-&trans  &kp LSHFT          &kp F7  &kp F8  &kp F9  &kp F12    &trans     &kp LEFT_PARENTHESIS  &kp RPAR          &kp BACKSLASH      &kp RSHFT         &trans
-                                   &trans  &trans  &trans     &trans     &trans                &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
