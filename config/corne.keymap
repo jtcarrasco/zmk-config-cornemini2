@@ -143,12 +143,12 @@
         };
 
         leftBracket {
-            bindings = <&kp LEFT_BRACKET>;
+            bindings = <&kp RIGHT_BRACE>;
             key-positions = <16 28>;
         };
 
         rightBrace {
-            bindings = <&kp RIGHT_BRACE>;
+            bindings = <&kp LEFT_BRACKET>;
             key-positions = <5 17>;
         };
 
