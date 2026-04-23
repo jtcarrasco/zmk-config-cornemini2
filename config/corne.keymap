@@ -176,7 +176,7 @@
 &trans  &kp Q             &kp W        &kp E           &kp R        &kp T      &kp Y      &kp U        &kp I                &kp O             &kp P                    &trans
 &trans  &kp A             &kp S        &kp D           &kp F        &kp G      &kp H      &kp J        &kp K                &kp L             &mt RIGHT_GUI SEMICOLON  &trans
 &trans  &hm LEFT_SHIFT Z  &hm LCTRL X  &hm LEFT_ALT C  &kp V        &kp B      &kp N      &kp M        &hm RIGHT_ALT COMMA  &hm RCTRL PERIOD  &hm RSHIFT SLASH         &trans
-                                       &kp ESC         &lt 2 TILDE  &kp TAB    &kp SPACE  &lt 1 GRAVE  &mt RIGHT_GUI ENTER
+                                       &kp ESC         &lt 2 TILDE  &kp TAB    &kp SPACE  &lt 1 GRAVE  &lt 2 ENTER
             >;
         };
 
@@ -191,19 +191,29 @@
 
             bindings = <
 &trans  &kp TILDE  &kp N1        &kp N2           &kp N3      &kp MINUS    &kp DELETE  &kp LC(NUMBER_0)  &kp LC(MINUS)  &kp LC(KP_PLUS)  &kp BACKSPACE  &trans
-&trans  &trans     &kp N4        &kp N5           &kp N6      &kp PLUS     &kp LEFT    &kp DOWN          &kp UP_ARROW   &kp RIGHT        &kp LC(R)      &trans
+&trans  &kp CAPS   &kp N4        &kp N5           &kp N6      &kp PLUS     &kp LEFT    &kp DOWN          &kp UP_ARROW   &kp RIGHT        &kp LC(R)      &trans
 &trans  &kp LSHFT  &mt LCTRL N7  &mt LEFT_ALT N8  &kp N9      &kp EQUAL    &kp LC(S)   &kp LC(X)         &kp LC(C)      &kp LC(V)        &kp RSHFT      &trans
                                  &kp N0           &kp PERIOD  &trans       &trans      &trans            &trans
             >;
         };
 
-        FUN {
-            display-name = "NavFun";
+        MOU {
+            display-name = "mouseLayer";
             bindings = <
-&trans  &kp CAPSLOCK  &kp F1               &kp F2            &kp F3   &kp F4     &mkp LCLK       &kp PG_DN       &kp PG_UP     &mkp RCLK        &kp HOME  &trans
-&trans  &trans        &kp F5               &kp F6            &kp F7   &kp F8     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp END   &trans
-&trans  &trans        &mt LEFT_CONTROL F9  &mt LEFT_ALT F10  &kp F11  &kp F12    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans    &trans
-                                           &trans            &trans   &trans     &trans          &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mkp LCLK       &kp PG_DN       &kp PG_UP     &mkp RCLK        &kp HOME  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp END   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans    &trans
+                        &trans  &trans  &trans    &trans          &trans          &trans
+            >;
+        };
+
+        FUN {
+            display-name = "functionLayer";
+            bindings = <
+&trans  &trans    &kp F1               &kp F2            &kp F3   &kp F4     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp CAPS  &kp F5               &kp F6            &kp F7   &kp F8     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &mt LEFT_CONTROL F9  &mt LEFT_ALT F10  &kp F11  &kp F12    &trans  &trans  &trans  &trans  &trans  &trans
+                                       &trans            &trans   &trans     &trans  &trans  &trans
             >;
         };
     };
