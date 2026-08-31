@@ -216,7 +216,7 @@
         FUN {
             display-name = "functionLayer";
             bindings = <
-&trans  &trans    &kp F1               &kp F2            &kp F3   &kp F4     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &kp F1               &kp F2            &kp F3   &kp F4     &sl 4   &trans  &trans  &trans  &trans  &trans
 &trans  &kp CAPS  &kp F5               &kp F6            &kp F7   &kp F8     &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans    &mt LEFT_CONTROL F9  &mt LEFT_ALT F10  &kp F11  &kp F12    &trans  &trans  &trans  &trans  &trans  &trans
                                        &trans            &trans   &trans     &trans  &trans  &trans
@@ -226,7 +226,7 @@
         bluetooth {
             bindings = <
 &trans  &trans          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &bt BT_CLR_ALL  &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &bt BT_CLR_ALL  &trans        &bt BT_PRV    &bt BT_NXT    &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans          &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans
                                       &trans        &trans        &trans    &trans  &trans  &trans
             >;
